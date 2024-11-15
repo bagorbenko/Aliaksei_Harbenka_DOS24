@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#  наличие исходника и нового расширения
+# наличие исходника и нового расширения
 if [ $# -ne 2 ]; then
     echo "Usage: $0 name new_ext"
     exit 1
@@ -28,5 +28,5 @@ fi
 cp "$name" "$new_name"
 
 
-# принт имя нового файла
+# принт имени нового файла
 echo "File was renamed to: $new_name"

@@ -101,4 +101,3 @@ journalctl -u myapp.service
 ```
 
 ![Скриншот 3: Логирование](images/logs.png)
-
