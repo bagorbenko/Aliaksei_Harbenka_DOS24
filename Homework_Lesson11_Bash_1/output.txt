@@ -1,0 +1,4 @@
+/home/hara/Aliaksei_Harbenka_DOS24/Homework_Lesson11_Bash_1/test/file.txt
+/home/hara/Aliaksei_Harbenka_DOS24/Homework_Lesson11_Bash_1/test/test_2.txt
+/home/hara/Aliaksei_Harbenka_DOS24/Homework_Lesson11_Bash_1/test/test2/dolor.txt
+/home/hara/Aliaksei_Harbenka_DOS24/Homework_Lesson11_Bash_1/test/lorem.txt
