@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Домашнее задание</title>
+        <script>
+            async function fetchIP() {
+                const response = await fetch('/ip');
+                const ip = await response.text();
+                document.getElementById('ip-address').textContent = ip;
+            }
+            window.onload = fetchIP;
+        </script>
+    </head>
+<body>
+    <h1>Горбенко</h1>
+    <p>Настройка веб-серверов</p>
+</body>
+</html>
