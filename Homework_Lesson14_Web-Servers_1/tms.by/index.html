@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Домашнее задание</title>
-        <script>
-            async function fetchIP() {
-                const response = await fetch('/ip');
-                const ip = await response.text();
-                document.getElementById('ip-address').textContent = ip;
-            }
-            window.onload = fetchIP;
-        </script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Apache JMeter</title>
+    <style>
+        body {
+            background-color: #E6D3B3; /* Мягкий цвет фундука */
+            color: #4A3B2F; /* Темный оттенок для текста */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #D9C2A8; /* Немного темнее для разделения */
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #CBB49E;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #4A3B2F;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #4A3B2F;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
 <body>
-    <h1>Горбенко</h1>
-    <p>Настройка веб-серверов</p>
+
+<header>
+    <h1>Apache JMeter</h1>
+</header>
+
+<nav>
+    <a href="#about">О JMeter</a>
+    <a href="#features">Особенности</a>
+    <a href="#download">Загрузка</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>О JMeter</h2>
+        <p>Apache JMeter — инструмент с открытым исходным кодом для нагрузочного тестирования и измерения производительности различных сервисов, включая веб-приложения.</p>
+    </section>
+
+    <section id="features">
+        <h2>Особенности</h2>
+        <ul>
+            <li>Тестирование производительности веб-сайтов, баз данных и FTP-серверов.</li>
+            <li>Поддержка различных протоколов: HTTP, HTTPS, SOAP, JDBC и других.</li>
+            <li>Гибкая архитектура и расширяемость через плагины.</li>
+        </ul>
+    </section>
+
+    <section id="download">
+        <h2>Загрузка</h2>
+        <p>Вы можете загрузить последнюю версию Apache JMeter с <a href="https://jmeter.apache.org/">официального сайта</a> проекта.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Apache JMeter</p>
+</footer>
+
 </body>
 </html>
