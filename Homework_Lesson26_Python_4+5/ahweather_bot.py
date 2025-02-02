@@ -5,11 +5,14 @@ from telebot.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 
-# Загрузка переменных окружения
+# Загрузка переменных окружения из .env
 load_dotenv()
 
-TELEGRAM_API_KEY = os.getenv("TELEGRAM_API_KEY", "7774611233:AAFPf3ZFBoljHV1DPd9D-HyxkQdgiAaDias")
-WEATHER_API_KEY = os.getenv("WEATHER_API_KEY", "51ead9464675f6d821df0cdd03081a9c")
+TELEGRAM_API_KEY = os.getenv("TELEGRAM_API_KEY")
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
+
+if not TELEGRAM_API_KEY or not WEATHER_API_KEY:
+    raise ValueError("❌ Ошибка: отсутствуют API-ключи.")
 
 bot = telebot.TeleBot(TELEGRAM_API_KEY)
 user_data = {}
