@@ -1,0 +1,6 @@
+---
+- name: Setup MySQL on servers
+  hosts: servers
+  become: true
+  roles:
+    - mysql_setup

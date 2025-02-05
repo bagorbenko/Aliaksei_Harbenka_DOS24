@@ -1,0 +1,6 @@
+---
+- name: Manage users and groups
+  hosts: servers
+  become: true
+  roles:
+    - user_management

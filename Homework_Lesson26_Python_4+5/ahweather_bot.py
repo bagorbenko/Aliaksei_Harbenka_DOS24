@@ -21,10 +21,10 @@ WEATHER_EMOJIS = {
     "Clear": "☀️ Солнечно",
     "Clouds": "☁️ Облачно",
     "Rain": "🌧️ Дождь",
-    "Drizzle": "🌦️ Морось",
+    "Drizzle": "🌦️ Легкий дождь",
     "Thunderstorm": "⛈️ Гроза",
     "Snow": "❄️ Снег",
-    "Mist": "🌫️ Туман",
+    "Mist": "🌫️ Дымка",
     "Fog": "🌫️ Туман",
     "Haze": "🌫️ Легкий туман"
 }
@@ -105,7 +105,6 @@ class Weather:
         wind_direction = WIND_DIRECTION_TEXT[(wind_deg // 45) % 8]
         wind_arrow = WIND_DIRECTIONS[(wind_deg // 45) % 8]
         weather_main = self.data["weather"][0]["main"]
-        weather_desc = self.data["weather"][0]["description"].capitalize()
         weather_description = WEATHER_EMOJIS.get(weather_main, "🌥 Переменная облачность")
 
         return (

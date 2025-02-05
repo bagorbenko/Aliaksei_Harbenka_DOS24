@@ -1,0 +1,6 @@
+---
+- name: Setup SSL certificates
+  hosts: servers
+  become: true
+  roles:
+    - ssl_setup
