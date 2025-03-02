@@ -1,3 +1,17 @@
+# Игнорируем venv и конфиг
 config.env
 venv
 .env
+
+# Игнорируем Terraform state
+terraform.tfstate
+terraform.tfstate.backup
+
+# Игнорируем скачанные провайдеры
+.terraform/
+
+# Игнорируем файлы с секретными переменными
+*.tfvars
+
+# Игнорируем логи и временные файлы
+*.log
