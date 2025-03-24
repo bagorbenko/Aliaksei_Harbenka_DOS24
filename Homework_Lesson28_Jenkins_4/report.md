@@ -49,4 +49,4 @@ CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
 
 ### 6. Jenkins уведомления
 - В Telegram отправляются уведомления о результате билда, включая commit, автора и окружение.
-![notification](./images/4.jpg)
+![notification](./images/3.jpg)
