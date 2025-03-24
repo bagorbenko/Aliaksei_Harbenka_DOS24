@@ -1,6 +1,6 @@
 provider "google" {
-  project = "PROJECT"
-  region  = "REGION"
+  project = "oceanic-base-450915-k4"
+  region  = "europe-north1"
 }
 
 resource "google_compute_instance_template" "instance_template" {
@@ -69,7 +69,6 @@ resource "google_compute_health_check" "http" {
 
   http_health_check {
     port         = 80
-    request_path = "/"
   }
 }
 
